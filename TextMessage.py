@@ -9,7 +9,7 @@ from twilio.rest import Client
 class TextMessage:
 
     # Will by default initiate with my number as recipient and twilio number as sender (to be changed later to Adam's number)
-    __init__():
+    def __init__(self):
         # Message content will be determined by Tweeter module, we can input all our other info now
         self.content = "Message here"
         self.sender = os.environ['TWILIO_NUMBER']
@@ -22,12 +22,12 @@ class TextMessage:
         self.auth_token = self.auth_token.strip()
 
     # Send our message to our recipient
-    def SendMessage():
+    def SendMessage(self):
         # Log these instead
-        print ("Account SID is: " + account_sid)
-        print ("Authentication token is: " + auth_token)
+        #print ("Account SID is: " + account_sid)
+        #print ("Authentication token is: " + auth_token)
 
-        client = Client(account_sid, auth_token)
+        client = Client(self.account_sid, self.auth_token)
 
         message = client.messages \
             .create(

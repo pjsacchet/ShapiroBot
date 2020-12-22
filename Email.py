@@ -9,6 +9,7 @@ import threading
 def LoginServer(thread, logger):
     # Punch in waiting info into logger
     # Wait in loop until global is set
+    print("test")
 
 def main():
     server = smtplib.SMTP_SSL('smtp.gmail.com', 465)

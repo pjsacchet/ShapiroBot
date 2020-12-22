@@ -18,17 +18,21 @@ import TextMessage
 import DiscordBot
 
 # Use this variable as a flag to tell other running threads when to execute, and what with
-global SHAPIRO_TWEETED = False
-global TWEET_CONTENT = ""
-global TWEET_LINK = ""
+SHAPIRO_TWEETED = False
+TWEET_CONTENT = ""
+TWEET_LINK = ""
+# Name of our log for other modules to use
+LOG_NAME = "SHAPIROLOG.log"
 
 def main():
     # Create logger and log startup
-
+    global LOG_NAME
+    logging.basicConfig(filename=LOG_NAME, level=logging.DEBUG)
+    logging.info("Starting Shapiro bot setup...")
 
     msg = TextMessage.TextMessage()
     msg.content = "LOL loser"
-    msg.recipient = os.environ['PATRICK_NUMBER']
+    msg.SendMessage()
 
 
 
