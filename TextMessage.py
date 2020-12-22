@@ -1,4 +1,4 @@
-# Purpose of this script is to create and send text messages to my groupmembers
+# Purpose of this script is to implement functionality for easily sending text messages
 # Import core libraries
 import os
 import logging
@@ -6,11 +6,7 @@ import logging
 # Import Twilio library for sending messages
 from twilio.rest import Client
 
-
-
-
-# Your Account Sid and Auth Token from twilio.com/console
-# and set the environment variables. See http://twil.io/secure
+# Grab our SID and authentication token from our .env variable
 account_sid = os.environ['TWILIO_ACCOUNT_SID']
 auth_token = os.environ['TWILIO_AUTH_TOKEN']
 
