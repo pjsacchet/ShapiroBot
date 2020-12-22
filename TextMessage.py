@@ -22,7 +22,6 @@ class TextMessage:
         self.auth_token = self.auth_token.strip()
 
     # Send our message to our recipient
-    # Param: message - content of message to send
     def SendMessage():
         # Log these instead
         print ("Account SID is: " + account_sid)

@@ -19,11 +19,12 @@ import DiscordBot
 
 # Use this variable as a flag to tell other running threads when to execute, and what with
 global SHAPIRO_TWEETED = False
-
+global TWEET_CONTENT = ""
+global TWEET_LINK = ""
 
 def main():
     # Create logger and log startup
-    
+
 
     msg = TextMessage.TextMessage()
     msg.content = "LOL loser"
