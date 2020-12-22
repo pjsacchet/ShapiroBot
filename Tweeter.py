@@ -1,1 +1,1 @@
-# Purpose of this file will be to implement twitter functionality 
+# Purpose of this script is to implement twitter functionality 

@@ -9,6 +9,7 @@
 # Import native libraries and additional modules needed
 import threading
 import os
+import logging
 
 # Import personal libraries
 import Email
@@ -16,11 +17,18 @@ import Tweeter
 import TextMessage
 import DiscordBot
 
-
+# Use this variable as a flag to tell other running threads when to execute, and what with
+global SHAPIRO_TWEETED = False
 
 
 def main():
-    print("hello world")
+    # Create logger and log startup
+    
+
+    msg = TextMessage.TextMessage()
+    msg.content = "LOL loser"
+    msg.recipient = os.environ['PATRICK_NUMBER']
+
 
 
 if __name__ == '__main__':
